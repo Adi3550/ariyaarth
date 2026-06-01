@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (qty) text += `%0A- *Order Quantity:* ${qty} pcs`;
     if (msg) text += `%0A- *Special Requirements:* ${msg}`;
 
-    waQuickBtn.href = `https://wa.me/918010089316?text=${text}`;
+    waQuickBtn.href = `https://wa.me/919022202927?text=${text}`;
   };
 
   // Add event listeners on input change to keep WhatsApp text accurate
