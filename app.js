@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
     entries.forEach(entry => {
       if (entry.isIntersecting && !animationTriggered) {
         animationTriggered = true;
-        countUp(counterRetailers, 500, 1500, '+');
+        countUp(counterRetailers, 40, 1500, '+');
         countUp(counterCategories, 5, 1000, '+');
         statsObserver.unobserve(entry.target);
       }
