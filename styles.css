@@ -1785,16 +1785,15 @@ footer {
 --------------------------------------------------------- */
 .brands-section {
   margin-top: 60px;
-  background-color: var(--color-black);
+  background-color: transparent;
   border-radius: 8px;
   padding: 30px 20px;
   text-align: center;
   position: relative;
-  border: 1px solid var(--color-primary); /* Gold border */
 }
 
 .brands-subtitle {
-  color: var(--color-white);
+  color: var(--color-text-main);
   font-size: 0.8rem;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -1806,14 +1805,14 @@ footer {
   top: -15px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: var(--color-primary);
+  background-color: var(--color-white);
   padding: 5px 25px;
   border-radius: 4px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .brands-badge {
-  color: var(--color-black);
+  color: var(--color-text-main);
   font-weight: 700;
   font-size: 0.9rem;
   letter-spacing: 1px;
@@ -1833,7 +1832,7 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid var(--color-border);
   padding-right: 30px;
 }
 
@@ -1843,13 +1842,13 @@ footer {
 }
 
 .brand-item img {
-  height: 40px;
+  height: 80px;
   width: auto;
   object-fit: contain;
 }
 
 .brand-item .brand-text {
-  color: var(--color-white);
+  color: var(--color-text-main);
   font-weight: 600;
   font-size: 0.9rem;
   letter-spacing: 1px;
