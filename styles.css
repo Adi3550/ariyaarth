@@ -1779,3 +1779,86 @@ footer {
     display: none; /* Hide Quote button on tiny screens to avoid overlaps */
   }
 }
+
+/* ---------------------------------------------------------
+   BRANDS SECTION
+--------------------------------------------------------- */
+.brands-section {
+  margin-top: 60px;
+  background-color: var(--color-black);
+  border-radius: 8px;
+  padding: 30px 20px;
+  text-align: center;
+  position: relative;
+  border: 1px solid var(--color-primary); /* Gold border */
+}
+
+.brands-subtitle {
+  color: var(--color-white);
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.brands-badge-wrapper {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-primary);
+  padding: 5px 25px;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.brands-badge {
+  color: var(--color-black);
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.brands-logos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.brand-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  padding-right: 30px;
+}
+
+.brand-item:last-child {
+  border-right: none;
+  padding-right: 0;
+}
+
+.brand-item img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+.brand-item .brand-text {
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .brand-item {
+    border-right: none;
+    padding-right: 0;
+    width: 40%;
+  }
+}
