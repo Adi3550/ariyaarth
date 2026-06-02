@@ -212,7 +212,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Intercept Enquiry Form Submissions
   if (enquiryForm) {
-    enquiryForm.addEventListener('submit', (e) => {
+    enquiryForm.addEventListener('submit', async (e) => {
       e.preventDefault();
 
       // Native browser validation triggered automatically prior to this
@@ -224,28 +224,22 @@ document.addEventListener('DOMContentLoaded', () => {
         return; // safeguard check
       }
 
-      // Display dynamic success toast feedback overlay
+      // Display dynamic success toast feedback overlay immediately for UX
       successToast.classList.add('active');
-      
-      // Store submission log in local storage for auditing/offline capability
-      const leadData = {
-        name: nameVal,
-        phone: phoneVal,
-        email: document.getElementById('email').value.trim(),
-        shop: document.getElementById('businessName').value.trim(),
-        city: locationVal,
-        cat: categorySelect.value,
-        quantity: quantityInput.value.trim(),
-        message: document.getElementById('message').value.trim(),
-        date: new Date().toISOString()
-      };
 
+      const formData = new FormData(enquiryForm);
+      
       try {
-        const history = JSON.parse(localStorage.getItem('ariyaarth_leads') || '[]');
-        history.push(leadData);
-        localStorage.setItem('ariyaarth_leads', JSON.stringify(history));
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: formData
+        });
+        
+        if (!response.ok) {
+          console.error("Failed to send email via Web3Forms");
+        }
       } catch (err) {
-        console.error("Local storage error:", err);
+        console.error("Error submitting form:", err);
       }
     });
   }

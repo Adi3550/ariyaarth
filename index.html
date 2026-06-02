@@ -9,6 +9,28 @@
   <meta name="description" content="Ariyaarth Enterprises is Goa's trusted wholesale distributor for innerwear, outerwear, sportswear, hosiery & readymade garments. Serving retailers across Panjim and Goa.">
   <meta name="keywords" content="wholesale garments Goa, innerwear distributor Goa, outerwear wholesaler Panjim, garment distributor Goa, sportswear wholesale Goa, readymade garments Goa, hosiery supplier Goa, bulk clothing supply Goa">
   <meta name="author" content="Ariyaarth Enterprises">
+
+  <!-- Local Business Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WholesaleStore",
+    "name": "Ariyaarth Enterprises",
+    "image": "https://ariyaarthenterprises.com/assets/images/logo.png",
+    "description": "Goa's trusted wholesale distributor for innerwear, sportswear, and readymade garments.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Government Primary High School, Kirlawada, FVQF+92X",
+      "addressLocality": "Chimbel, Panjim",
+      "addressRegion": "Goa",
+      "postalCode": "403006",
+      "addressCountry": "IN"
+    },
+    "telephone": "+919022202927",
+    "url": "https://ariyaarthenterprises.com/",
+    "openingHours": "Mo-Sa 10:00-18:00"
+  }
+  </script>
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
@@ -108,7 +130,7 @@
           <!-- Left Media Panel -->
           <div class="about-media animate-fade-up">
             <div class="about-image-card">
-              <img src="assets/images/dist.png" alt="Inside Ariyaarth Enterprises Modern Bulk Garment Distribution Showroom in Chimbel, Panjim, Goa" loading="lazy" decoding="async">
+              <img src="assets/images/dist.webp" alt="Inside Ariyaarth Enterprises Modern Bulk Garment Distribution Showroom in Chimbel, Panjim, Goa" loading="lazy" decoding="async">
             </div>
             <div class="about-experience-tag">
               <h3>2025</h3>
@@ -474,7 +496,10 @@
 
           <!-- Right Form Panel Card -->
           <div class="enquiry-form-card animate-fade-up" id="form-container">
-            <form id="bulk-enquiry-form">
+            <form action="https://api.web3forms.com/submit" method="POST" id="bulk-enquiry-form">
+              <!-- Replace with your Web3Forms Access Key -->
+              <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+              
               <div class="form-grid">
                 
                 <!-- Full Name -->
@@ -512,12 +537,14 @@
                   <label for="category">Product Category</label>
                   <select id="category" name="category" class="form-input">
                     <option value="">-- Select Category --</option>
-                    <option value="Innerwear">Innerwear</option>
-                    <option value="Outerwear">Outerwear</option>
-                    <option value="Hosiery">Hosiery</option>
+                    <option value="Joggers">Joggers</option>
+                    <option value="Trackpants">Trackpants</option>
+                    <option value="T-Shirts">T-Shirts</option>
                     <option value="Sportswear">Sportswear</option>
-                    <option value="Readymade">Readymade Garments</option>
-                    <option value="Kids Wear">Kids Wear</option>
+                    <option value="Shorts">Shorts</option>
+                    <option value="Socks">Socks</option>
+                    <option value="Innerwear">Innerwear</option>
+                    <option value="Handkerchiefs">Handkerchiefs</option>
                     <option value="Mixed/Multiple">Mixed / Multiple Categories</option>
                   </select>
                 </div>
