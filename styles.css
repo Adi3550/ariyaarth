@@ -402,10 +402,9 @@ header .container {
 }
 
 .logo-img {
-  height: 44px;
+  height: 90px;
   width: auto;
   object-fit: contain;
-  border-radius: var(--radius-md);
 }
 
 .logo-icon {

@@ -180,7 +180,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const qty = encodeURIComponent(quantityInput.value.trim() || '');
     const msg = encodeURIComponent(document.getElementById('message').value.trim() || '');
 
-    let text = "Hello Ariyaarth Enterprises! I would like to make a wholesale enquiry.";
+    let text = "Hello AriyaArth Enterprises! I would like to make a wholesale enquiry.";
     if (name) text += `%0A- *Name:* ${name}`;
     if (phone) text += `%0A- *Phone:* ${phone}`;
     if (location) text += `%0A- *Location:* ${location}`;
