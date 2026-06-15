@@ -575,9 +575,9 @@ header .container {
   max-width: 550px;
 }
 
-.hero-content h1 { font-family: var(--font-headings); font-size: clamp(3rem, 6vw, 5.5rem); font-weight: 800; color: #FFFFFF; line-height: 1.1; margin-bottom: 20px; letter-spacing: -1px; text-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+.hero-content h1 { font-family: var(--font-headings); font-size: clamp(3rem, 6vw, 5.5rem); font-weight: 800; color: var(--color-primary); line-height: 1.1; margin-bottom: 20px; letter-spacing: -1px; text-shadow: none; }
 
-.hero-content p { font-size: clamp(1rem, 1.5vw, 1.25rem); color: rgba(255,255,255,0.9); margin-bottom: 30px; max-width: 500px; line-height: 1.6; }
+.hero-content p { font-size: clamp(1rem, 1.5vw, 1.25rem); color: var(--color-text-main); font-weight: 500; margin-bottom: 30px; max-width: 500px; line-height: 1.6; }
 
 .hero-actions-group {
   display: flex;
@@ -1545,7 +1545,7 @@ footer {
     gap: 40px;
   }
   
-  .hero-content h1 { font-family: var(--font-headings); font-size: clamp(3rem, 6vw, 5.5rem); font-weight: 800; color: #FFFFFF; line-height: 1.1; margin-bottom: 20px; letter-spacing: -1px; text-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+  .hero-content h1 { font-family: var(--font-headings); font-size: clamp(3rem, 6vw, 5.5rem); font-weight: 800; color: var(--color-primary); line-height: 1.1; margin-bottom: 20px; letter-spacing: -1px; text-shadow: none; }
   
   .hero-image-wrapper img {
     height: 440px;
@@ -1685,9 +1685,9 @@ footer {
     text-align: center;
   }
   
-  .hero-content h1 { font-family: var(--font-headings); font-size: clamp(3rem, 6vw, 5.5rem); font-weight: 800; color: #FFFFFF; line-height: 1.1; margin-bottom: 20px; letter-spacing: -1px; text-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+  .hero-content h1 { font-family: var(--font-headings); font-size: clamp(3rem, 6vw, 5.5rem); font-weight: 800; color: var(--color-primary); line-height: 1.1; margin-bottom: 20px; letter-spacing: -1px; text-shadow: none; }
   
-  .hero-content p { font-size: clamp(1rem, 1.5vw, 1.25rem); color: rgba(255,255,255,0.9); margin-bottom: 30px; max-width: 500px; line-height: 1.6; }
+  .hero-content p { font-size: clamp(1rem, 1.5vw, 1.25rem); color: var(--color-text-main); font-weight: 500; margin-bottom: 30px; max-width: 500px; line-height: 1.6; }
   
   .hero-actions-group {
     justify-content: center;
