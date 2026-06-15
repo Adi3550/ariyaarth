@@ -477,6 +477,10 @@
           <!-- Right Form Panel Card -->
           <div class="enquiry-form-card animate-fade-up" id="form-container">
             <form action="https://api.web3forms.com/submit" method="POST" id="bulk-enquiry-form">
+
+              <!-- Anti-Bot Honeypot Protection -->
+              <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
               <!-- Web3Forms Access Key -->
               <input type="hidden" name="access_key" value="184edbd7-7fd7-4f72-853a-318c185b6399">
               
