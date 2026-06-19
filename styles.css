@@ -36,3 +36,22 @@
     height: auto;
   }
 }
+
+
+/* --- NAVY BLUE & SILVER THEME --- */
+header {
+  background: linear-gradient(90deg, #F8F9FA 0%, #E2E6EB 50%, #C8CED8 100%) !important;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+header.scrolled {
+  background: linear-gradient(90deg, #FFFFFF 0%, #EAEDF2 50%, #D4DAE4 100%) !important;
+}
+.logo-text {
+  color: #1A2B4C !important;
+}
+.nav-link {
+  color: #1A2B4C !important;
+}
+.header-icon-link {
+  color: #1A2B4C !important;
+}
